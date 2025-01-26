@@ -1,6 +1,9 @@
 import { Instagram } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  
   return (
     <footer className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-6">
             <a
               href="https://www.instagram.com/retarded_ashi"
               target="_blank"
@@ -58,6 +61,17 @@ const Footer = () => {
               <div className="absolute inset-0 rounded-full bg-black animate-pulse blur-md group-hover:blur-lg transition-all duration-300"></div>
               <Instagram size={32} className="relative z-10 hover:scale-110 transition-transform duration-300" />
             </a>
+            
+            <button 
+              onClick={() => navigate("/coming-soon")}
+              className="glowing-button"
+            >
+              <span className="glowing-button-inner"></span>
+              <span className="glowing-button-content">
+                Coming Soon
+              </span>
+            </button>
+            
             <p className="text-sm text-gray-400 font-light tracking-wide">Made by Vicky Shetty</p>
           </div>
         </div>
