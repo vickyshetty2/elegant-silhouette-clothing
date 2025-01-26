@@ -6,7 +6,7 @@ const Header = () => {
           <img
             src="/lovable-uploads/c39c3981-0abb-480e-a434-63fdca3972f9.png"
             alt="ASH Logo"
-            className="h-8"
+            className="h-12 sm:h-16" // Increased logo size
           />
         </div>
       </div>
