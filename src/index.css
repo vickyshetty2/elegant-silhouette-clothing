@@ -56,3 +56,12 @@
 .product-shadow {
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
